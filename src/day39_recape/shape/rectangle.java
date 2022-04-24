@@ -1,8 +1,12 @@
 package day39_recape.shape;
 
-public class rectangle {
+public class rectangle extends shapes{
 
     private double length, width;
+
+    public rectangle(String name) {
+        super(name);
+    }
 
     public double getLength() {
         return length;
@@ -26,5 +30,11 @@ public class rectangle {
             System.exit(1);
         }
         this.width = width;
+    }
+
+    public rectangle(String name, double length, double width) {
+        super("rectangle");
+        setLength(length);
+        setWidth(width);
     }
 }
