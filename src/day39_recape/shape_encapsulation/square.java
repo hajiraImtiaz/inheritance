@@ -1,10 +1,9 @@
-package day39_recape.shape;
+package day39_recape.shape_encapsulation;
 
 public class square extends shapes {
 
 
-    private double side;
-
+    public double side;
     public square(String name) {
         super(name);
     }
@@ -21,7 +20,7 @@ public class square extends shapes {
         this.side = side;
     }
 
-    public square(String name, double side) {
+    public square( double side) {
         super("square");
         // this.side = side;// through this even -tive number can be set as length of squre thats why we change it
         setSide(side);// we call set method to ensure up given condition were only published
