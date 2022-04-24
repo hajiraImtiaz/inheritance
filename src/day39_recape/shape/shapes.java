@@ -31,4 +31,29 @@ public class shapes {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "shapes{" +
+                "name='" + name + '\'' +
+                ", area='" + area()+ '\''+
+                ", perimeter='" + perimeter()+ '\'' +
+                '}';
+    }
+
+    /*
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+
+ */
+    /*
+   over loading because same method different parameter
+
+    public String toString(int a) {
+        return super.toString();
+    }
+
+     */
 }
